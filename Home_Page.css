@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f4;
+    color: #333;
+}
+
+header {
+    background-color: #236b45;
+    color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a8e6a1;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Top {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("https://upload.wikimedia.org/wikipedia/commons/2/21/Cavite_State_University_-_Main_Campus%2C_Indang%2C_Cavite%2C_Sep_2026_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.Top h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.Top p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.about {
+    background-color: #e1f0e3;
+    text-align: left;
+    padding: 50px 15%;
+}
+
+.about h2 {
+    color: #236b45;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .animal-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+}
